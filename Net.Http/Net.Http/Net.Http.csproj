@@ -3,6 +3,22 @@
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
         <Nullable>enable</Nullable>
+        <AssemblyName>Back.Zone.Net.Http</AssemblyName>
+        <RootNamespace>Back.Zone.Net.Http</RootNamespace>
+        <PackageId>Back.Zone.Net.Http</PackageId>
+        <PackageVersion>0.0.1</PackageVersion>
+        <Title>Backzone Net.Http</Title>
+        <Authors>Murat Yavuzkaplan</Authors>
+        <PackageProjectUrl>https://back.zone</PackageProjectUrl>
+        <PackageLicenseUrl>https://back.zone/oss/license.html</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/back-zone/net.http</RepositoryUrl>
+        <PackageTags>Backzone Net.Http, Back.Zone.Net.Http</PackageTags>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Back.Zone.Monads" Version="0.0.1" />
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    </ItemGroup>
 
 </Project>
