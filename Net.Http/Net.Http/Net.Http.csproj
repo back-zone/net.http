@@ -6,7 +6,7 @@
         <AssemblyName>Back.Zone.Net.Http</AssemblyName>
         <RootNamespace>Back.Zone.Net.Http</RootNamespace>
         <PackageId>Back.Zone.Net.Http</PackageId>
-        <PackageVersion>0.0.1</PackageVersion>
+        <PackageVersion>0.0.2</PackageVersion>
         <Title>Backzone Net.Http</Title>
         <Authors>Murat Yavuzkaplan</Authors>
         <PackageProjectUrl>https://back.zone</PackageProjectUrl>
@@ -17,7 +17,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Back.Zone.Monads" Version="0.0.1" />
+      <PackageReference Include="Back.Zone.Monads" Version="0.0.3" />
       <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
     </ItemGroup>
 
