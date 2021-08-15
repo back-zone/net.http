@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Back.Zone.Net.Http.ViewModels.Responses;
 
 namespace Back.Zone.Net.Http.ViewModels.Common
 {
@@ -32,5 +33,14 @@ namespace Back.Zone.Net.Http.ViewModels.Common
 
             return paginationNumbers;
         }
+
+        public static TablePagination BuildFrom<T>(PaginatedResponse<T> paginatedResponse) =>
+            new(
+                paginatedResponse.PreviousPage,
+                paginatedResponse.CurrentPage,
+                paginatedResponse.NextPage,
+                paginatedResponse.TotalPages,
+                paginatedResponse.PageSize
+            );
     }
 }
