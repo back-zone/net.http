@@ -34,7 +34,7 @@ namespace Back.Zone.Net.Http.ViewModels.Responses
         bool Result,
         string Message,
         DateTime HappenedAt,
-        object Payload
+        object? Payload
     )
     {
         private const string SuccessMessage = "#SUCCEED#";
