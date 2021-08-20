@@ -29,7 +29,7 @@ namespace Back.Zone.Net.Http.ViewModels.Requests
 
         public static PaginationParameters FromQueryParameters(int? page, int? pageSize)
         {
-            if (page != null && pageSize != null)
+            if (page != null && pageSize != null && page != 0 && pageSize != 0)
             {
                 return From(page.Value, pageSize.Value);
             }
